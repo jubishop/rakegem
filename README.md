@@ -27,6 +27,8 @@ gem specificinstall jubishop/rakegem
 
 Set up new gem:
 
+- First create empty git repo with same name as gem, check it out, and `cd` into it.
+
 ```ruby
 gbinit <gem-name>
 ```
