@@ -1,6 +1,6 @@
 # RakeGem
 
-Rake install
+Rake helper for setting up new gem and deploying/install new gem versions or setting up new gems.
 
 ## Installation
 
@@ -24,6 +24,24 @@ gem specificinstall jubishop/rakegem
 ```
 
 ## Usage
+
+Set up new gem:
+
+```ruby
+gbinit <gem-name>
+```
+
+Bump minor version number and install gem:
+
+```ruby
+bundle exec rake install
+```
+
+Bump major version number and install game:
+
+```ruby
+bundle exec rake install[major]
+```
 
 ## License
 
