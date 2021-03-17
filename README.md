@@ -13,7 +13,7 @@ gem 'rakegem', github: 'jubishop/rakegem'
 And then execute:
 
 ```sh
-$ bundle install
+bundle install
 ```
 
 Or install `specificinstall` to install globally:
@@ -25,7 +25,7 @@ gem specificinstall jubishop/rakegem
 
 ## Usage
 
-### Set up new gem:
+### Set up new gem
 
 First create an empty git repo named `<gem-name>`. Then:
 
@@ -35,13 +35,13 @@ cd <gem-name>
 gbinit <gem-name>
 ```
 
-### Bump minor version number and install gem:
+### Bump minor version number and install gem
 
 ```sh
 bundle exec rake install
 ```
 
-### Bump major version number and install game:
+### Bump major version number and install gem
 
 ```sh
 bundle exec rake install[major]
