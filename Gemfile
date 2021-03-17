@@ -9,5 +9,5 @@ gem 'rubocop-rake'
 gem 'rubocop-rspec'
 gem 'steep'
 
-# Specify your gem's dependencies in core.gemspec
+# Specify your gem's dependencies in rakegem.gemspec
 gemspec

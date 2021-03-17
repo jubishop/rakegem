@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'rakegem'
-  spec.version       = '2.2'
+  spec.version       = '2.9'
   spec.summary       = 'Rakefile gem helpers.'
   spec.authors       = ['Justin Bishop']
   spec.email         = ['jubishop@gmail.com']
@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.files         = Dir['lib/**/*.rb'] + Dir['sig/**/*.rb']
   spec.require_paths = ['lib']
   spec.bindir        = 'bin'
-  spec.executables   = ['rginit']
+  spec.executables   = []
   spec.metadata      = {
     'steep_types' => 'sig'
   }

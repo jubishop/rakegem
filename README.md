@@ -1,6 +1,6 @@
 # RakeGem
 
-Rake helper for setting up new gems, and then building/installing new gems with automatically bumped version numbers.
+Rake helper for building and installing new gems with automatically bumped version numbers.
 
 ## Installation
 
@@ -10,24 +10,7 @@ Rake helper for setting up new gems, and then building/installing new gems with 
 gem 'rakegem', github: 'jubishop/rakegem'
 ```
 
-### Globally
-
-```sh
-gem install specificinstall
-gem specificinstall jubishop/rakegem
-```
-
 ## Usage
-
-### Set up new gem
-
-First create an empty git repo named `<gem-name>`. Then:
-
-```sh
-git clone https://github.com/jubishop/<gem-name>.git
-cd <gem-name>
-gbinit <gem-name>
-```
 
 ### Bump minor version number and install gem
 
