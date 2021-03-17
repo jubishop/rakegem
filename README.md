@@ -27,7 +27,7 @@ gem specificinstall jubishop/rakegem
 
 ### Set up new gem:
 
-First create an empty git repo named `<gem-name>`.
+First create an empty git repo named `<gem-name>`. Then:
 
 ```sh
 git clone https://github.com/jubishop/<gem-name>.git
