@@ -16,6 +16,13 @@ And then execute:
 $ bundle install
 ```
 
+Or install `specificinstall` to install globally:
+
+```ruby
+gem install specificinstall
+gem specificinstall jubishop/rakegem
+```
+
 ## Usage
 
 ## License
