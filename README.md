@@ -6,21 +6,11 @@ Rake helper for setting up new gems, and then building/installing new gems with 
 
 ### Bundler
 
-Add this line to your application's Gemfile:
-
 ```ruby
 gem 'rakegem', github: 'jubishop/rakegem'
 ```
 
-Then:
-
-```sh
-bundle install
-```
-
 ### Globally
-
-Use `specificinstall`:
 
 ```sh
 gem install specificinstall
