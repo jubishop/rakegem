@@ -1,6 +1,6 @@
 # RakeGem
 
-Rake helper for setting up new gem and deploying/install new gem versions or setting up new gems.
+Rake helper for setting up new gems, and then building/installing new gems with automatically bumped version numbers.
 
 ## Installation
 
