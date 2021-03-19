@@ -31,12 +31,8 @@ module RakeGem
       end
 
       gemspec, gem_file = gem_files
-      src_mtime = [
-        Dir.glob('lib/**/*').map { |f| File.mtime(f) }.max || Time.at(0),
-        Dir.glob('sig/**/*').map { |f| File.mtime(f) }.max || Time.at(0),
-        File.mtime(gemspec)
-      ].max
-      if File.exist?(gem_file) && File.mtime(gem_file) >= src_mtime
+      max_mtime = Dir.glob('**/*').map { |f| File.mtime(f) }.max
+      if File.exist?(gem_file) && File.mtime(gem_file) >= max_mtime
         puts 'No files have changed since latest gem install'
         return false
       end
