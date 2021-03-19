@@ -4,8 +4,6 @@ Rake helper for building and installing new gems with automatically bumped versi
 
 ## Installation
 
-### In Gemfile
-
 ```ruby
 gem 'rakegem', github: 'jubishop/rakegem'
 ```
