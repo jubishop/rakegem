@@ -24,6 +24,12 @@ module RakeGem
         gemspec, gem_file = gem_files
         sh "gem build #{gemspec} -o #{gem_file}"
       }
+
+      desc('Push to JubiGems')
+      task(:push) {
+        _, gem_file = gem_files
+        sh "gem push #{gem_file}"
+      }
     end
 
     private
