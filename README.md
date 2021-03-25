@@ -1,6 +1,6 @@
 # RakeGem
 
-Rake helper for building and installing new gems with automatically bumped version numbers.
+Rakefile gem build and install helpers.
 
 ## Installation
 
@@ -10,16 +10,22 @@ gem 'rakegem', github: 'jubishop/rakegem'
 
 ## Usage
 
-### Bump minor version number and install gem
+### Bump minor version number and build gem
+
+```sh
+bundle exec rake build
+```
+
+### Bump major version number and build gem
+
+```sh
+bundle exec rake build[major]
+```
+
+### Install gem
 
 ```sh
 bundle exec rake install
-```
-
-### Bump major version number and install gem
-
-```sh
-bundle exec rake install[major]
 ```
 
 ## License
