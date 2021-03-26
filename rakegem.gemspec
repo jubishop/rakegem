@@ -1,7 +1,7 @@
 Gem::Specification.new do |spec|
   spec.name          = 'rakegem'
   spec.version       = '2.18'
-  spec.summary       = 'Rakefile gem build and install helpers.'
+  spec.summary       = 'Rakefile gem helpers.'
   spec.authors       = ['Justin Bishop']
   spec.email         = ['jubishop@gmail.com']
   spec.homepage      = 'https://github.com/jubishop/rakegem'

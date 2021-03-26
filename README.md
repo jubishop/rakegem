@@ -1,31 +1,51 @@
 # RakeGem
 
-Rakefile gem build and install helpers.
+Rakefile gem helpers.
 
 ## Installation
 
+### Global installation
+
+```zsh
+gem install rakegem --source https://www.jubigems.org/
+```
+
+### In a Gemfile
+
 ```ruby
-gem 'rakegem', github: 'jubishop/rakegem'
+gem 'rakegem', source: 'https://www.jubigems.org/'
 ```
 
 ## Usage
 
-### Bump minor version number and build gem
+### Bump minor version
 
 ```sh
-bundle exec rake build
+rake bump
 ```
 
-### Bump major version number and build gem
+### Bump major version number
 
 ```sh
-bundle exec rake build[major]
+rake bump[major]
+```
+
+### Build gem
+
+```sh
+rake build
 ```
 
 ### Install gem
 
 ```sh
-bundle exec rake install
+rake install
+```
+
+### Push gem to jubigems.org
+
+```sh
+rake push
 ```
 
 ## License
