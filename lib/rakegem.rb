@@ -54,8 +54,5 @@ module RakeGem
     def gem_file
       return "#{File.basename(gemspec, '.*')}.gem"
     end
-
-    def bump_version(version)
-    end
   end
 end
