@@ -1,5 +1,7 @@
 # RakeGem
 
+[![Rubocop Status](https://github.com/jubishop/rakegem/workflows/Rubocop/badge.svg)](https://github.com/jubishop/rakegem/actions)
+
 Rakefile gem helpers.
 
 ## Installation
