@@ -7,6 +7,11 @@ module RakeGem
     include Rake::DSL
 
     def initialize
+      desc('List remote versions of gem')
+      task(:list) {
+        sh "gem list -re #{gem_name}"
+      }
+
       desc('Bump gem minor|major version')
       task(:bump, [:version]) { |_, args|
         args.with_defaults(version: 'minor')
@@ -43,16 +48,27 @@ module RakeGem
       task(:push) {
         sh "gem push #{gem_file}"
       }
+
+      desc('Yank version from JubiGems')
+      task(:yank, [:version]) { |_, args|
+        raise ArgumentError, 'Version must be passed' unless args.key?(:version)
+
+        sh "gem yank #{gem_name} -v #{args[:version]}"
+      }
     end
 
     private
 
     def gemspec
-      return Rake::FileList.new('*.gemspec').first
+      return "#{gem_name}.gemspec"
     end
 
     def gem_file
-      return "#{File.basename(gemspec, '.*')}.gem"
+      return "#{gem_name}.gem"
+    end
+
+    def gem_name
+      return File.basename(Dir.pwd)
     end
   end
 end
