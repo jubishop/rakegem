@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'rakegem'
-  spec.version       = '2.21'
+  spec.version       = '2.22'
   spec.summary       = 'Rakefile gem helpers.'
   spec.authors       = ['Justin Bishop']
   spec.email         = ['jubishop@gmail.com']
