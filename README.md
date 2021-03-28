@@ -1,6 +1,6 @@
 # RakeGem
 
-[![Rubocop Status](https://github.com/jubishop/rakegem/workflows/Rubocop/badge.svg)](https://github.com/jubishop/rakegem/actions)
+[![Rubocop Status](https://github.com/jubishop/rakegem/workflows/Rubocop/badge.svg)](https://github.com/jubishop/rakegem/actions/workflows/rubocop.yml)
 
 Rakefile gem helpers.
 
